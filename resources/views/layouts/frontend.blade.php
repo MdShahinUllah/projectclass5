@@ -1,84 +1,125 @@
-<!DOCTYPE html>
-<!--[if IE 7]><html class="ie ie7"><![endif]-->
-<!--[if IE 8]><html class="ie ie8"><![endif]-->
-<!--[if IE 9]><html class="ie ie9"><![endif]-->
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="favicon.png" rel="icon">
-    <meta name="author" content="Nghia Minh Luong">
-    <meta name="keywords" content="Default Description">
-    <meta name="description" content="Default keyword">
-    <title>Sky - Homepage</title>
-    <!-- Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,400,700%7CMontserrat:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets/plugins/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/ps-icon/style.css')}}">
-    <!-- CSS Library-->
-    <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap/dist/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/owl-carousel/assets/owl.carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/slick/slick/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/Magnific-Popup/dist/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/jquery-ui/jquery-ui.min.css">')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/revolution/css/settings.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/revolution/css/layers.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/revolution/css/navigation.css')}}">
-    <!-- Custom-->
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
-    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
-    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-<!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
-<!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
-<!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
-<body class="ps-loading">
-<div class="header--sidebar"></div>
-<header class="header">
-    @include('frontend.partials.header')
-</header>
-<div class="header-services" style="background: #44ccf6;">
-    <div class="ps-services owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="7000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="false" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="on">
-        <p class="ps-service"><i class="ps-icon-delivery"></i><strong>Free delivery</strong>: Get free standard delivery on every order with Sky Store</p>
-        <p class="ps-service"><i class="ps-icon-delivery"></i><strong>Free delivery</strong>: Get free standard delivery on every order with Sky Store</p>
-        <p class="ps-service"><i class="ps-icon-delivery"></i><strong>Free delivery</strong>: Get free standard delivery on every order with Sky Store</p>
-    </div>
-</div>
-<main class="ps-main">
-    @yield('home')
+    <!DOCTYPE html>
+    <!--[if IE 7]><html class="ie ie7"><![endif]-->
+    <!--[if IE 8]><html class="ie ie8"><![endif]-->
+    <!--[if IE 9]><html class="ie ie9"><![endif]-->
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link href="frontend/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="frontend/favicon.png" rel="icon">
+        <meta name="author" content="Nghia Minh Luong">
+        <meta name="keywords" content="Default Description">
+        <meta name="description" content="Default keyword">
+        <title>Sky - Homepage</title>
+        <!-- Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,400,700%7CMontserrat:300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/font-awesome/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/ps-icon/style.css')}}">
+        <!-- CSS Library-->
+        <link rel="stylesheet" href="{{asset('frontend/plugins/bootstrap/dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/owl-carousel/assets/owl.carousel.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/slick/slick/slick.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/Magnific-Popup/dist/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/jquery-ui/jquery-ui.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/revolution/css/settings.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/revolution/css/layers.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/plugins/revolution/css/navigation.css')}}">
+        <!-- Custom-->
+        <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+        <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+        <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+        <style>
 
-    @include('frontend.partials.footer') <!--footer-->
-</main>
-<!-- JS Library-->
-<script type="text/javascript" src="{{asset('assets/plugins/jquery/dist/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/jquery-bar-rating/dist/jquery.barrating.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/owl-carousel/owl.carousel.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/gmap3.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/imagesloaded.pkgd.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/isotope.pkgd.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/jquery.matchHeight-min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/slick/slick/slick.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/elevatezoom/jquery.elevatezoom.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx39JFH5nhxze1ZydH-Kl8xXM3OK4fvcg&amp;region=GB"></script><script type="text/javascript" src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
-<!-- Custom scripts-->
-<script type="text/javascript" src="{{asset('assets/js/main.js')}}"></script>
-</body>
-</html>
+            .container {
+                padding: 2rem 0rem;
+            }
+
+            @media (min-width: 576px) {
+                .modal-dialog {
+                    max-width: 400px;
+                }
+                .modal-dialog .modal-content {
+                    padding: 1rem;
+                }
+            }
+            .modal-header .close {
+                margin-top: -1.5rem;
+            }
+
+            .form-title {
+                margin: -2rem 0rem 2rem;
+            }
+
+            .btn-round {
+                border-radius: 3rem;
+            }
+
+            .delimiter {
+                padding: 1rem;
+            }
+
+            .social-buttons .btn {
+                margin: 0 0.5rem 1rem;
+            }
+
+            .signup-section {
+                padding: 0.3rem 0rem;
+            }
+
+        </style>
+    </head>
+    <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+    <body class="ps-loading">
+    <div class="header--sidebar"></div>
+
+
+@include('frontend.partials.header')
+    <main class="ps-main">
+        @yield('home')
+
+
+        @include('frontend.partials.footer')
+    </main>
+    <!-- JS Library-->
+    <script type="text/javascript" src="{{asset('frontend/plugins/jquery/dist/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/jquery-bar-rating/dist/jquery.barrating.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/owl-carousel/owl.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/gmap3.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/imagesloaded.pkgd.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/isotope.pkgd.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/jquery.matchHeight-min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/slick/slick/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/elevatezoom/jquery.elevatezoom.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx39JFH5nhxze1ZydH-Kl8xXM3OK4fvcg&amp;region=GB"></script><script type="text/javascript" src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/plugins/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+    <!-- Custom scripts-->
+    <script type="text/javascript" src="{{asset('frontend/js/main.js')}}"></script>
+    <script>
+        $(document).ready(function() {             $('#loginModal').modal('show');
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        });
+
+    </script>
+    </body>
+    </html>

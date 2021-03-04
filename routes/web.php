@@ -17,7 +17,22 @@ Route::get('/',[\App\Http\Controllers\frontend\homeController::class,'home'])->n
 Route::get('/product/details',[\App\Http\Controllers\frontend\homeController::class,'productDetail'])->name('productDetail');
 Route::get('/contact/us',[\App\Http\Controllers\frontend\homeController::class,'contactUs'])->name('contactUs');
 Route::get('/contacts/us',[\App\Http\Controllers\frontend\homeController::class,'contactUs2'])->name('contactsUs');
-Route::get('/product',[\App\Http\Controllers\productController::class,'productData']);
+
+//Products
+Route::get('/product/list',[\App\Http\Controllers\backend\productController::class,'product'])->name('admin.product');
+Route::get('/product/create',[\App\Http\Controllers\backend\productController::class,'create'])->name('product.create');
+Route::post('/product/create',[\App\Http\Controllers\backend\productController::class,'store']);
+Route::get('/product/{id}/edit',[\App\Http\Controllers\backend\productController::class,'edit'])->name('product.edit');
+Route::post('/product/{id}/edit',[\App\Http\Controllers\backend\productController::class,'update']);
+
+
+//frondend login Form
+Route::post('/user/login',[\App\Http\Controllers\frontend\loginFormController::class,'index'])->name('user.login');
+Route::get('/user/profile',[\App\Http\Controllers\frontend\userController::class,'profile'])->name('user.profile');
+Route::post('/user/profile',[\App\Http\Controllers\frontend\userController::class,'editProfile']);
+
+
+Route::get('/user/logout',[\App\Http\Controllers\frontend\userController::class,'logout'])->name('user.logout');
 
 Route::middleware(['AdminCheck'])->group(function (){
     Route::middleware(['auth'])->group(function () {
